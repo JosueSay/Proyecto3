@@ -1,3 +1,10 @@
+/*
+   Simulación de atención a carros en kioscos COMPASS y EFECTIVO mediante hilos en C++, mutex y variables condicionales
+
+   Este programa simula la atención a carros que utilizan dos métodos de pago (COMPASS y EFECTIVO) en dos kioscos distintos.
+   Utiliza hilos para gestionar la atención simultánea a múltiples carros, registrando tiempos de atención.
+*/
+//Librerías
 #include <iostream>
 #include <pthread.h>
 #include <ctime>
