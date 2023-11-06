@@ -177,10 +177,8 @@ int main() {
     cout << "||ESTADISTICAS||"<< endl;
     cout << "================"<< endl;
     // Mostrar resultados
-    cout << "Tiempo total de atencion para carros con pago Compass: " << tiempo_total_compass << " segundos" << endl;
-    cout << "Tiempo promedio de atencion por carro con pago Compass: " << tiempo_promedio_compass << " segundos" << endl;
-    cout << "Tiempo total de atencion para carros con pago Efectivo: " << tiempo_total_efectivo << " segundos" << endl;
-    cout << "Tiempo promedio de atencion por carro con pago Efectivo: " << tiempo_promedio_efectivo << " segundos" << endl;
+    cout << "Tiempo total de atencion para carros con pago Compass: " << tiempo_total_compass << " segundos. \tTiempo promedio de atencion por carro con pago Compass: "<< tiempo_promedio_compass << " segundos" << endl;
+    cout << "Tiempo total de atencion para carros con pago Efectivo: " << tiempo_total_efectivo << " segundos. \tTiempo promedio de atencion por carro con pago Efectivo: " << tiempo_promedio_efectivo << " segundos" << endl;
 
     // Destruir mutexes
     pthread_mutex_destroy(&mutex_compass);
