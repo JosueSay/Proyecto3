@@ -3,6 +3,8 @@
 
    Este programa simula la atención a carros que utilizan dos métodos de pago (COMPASS y EFECTIVO) en dos kioscos distintos.
    Utiliza hilos para gestionar la atención simultánea a múltiples carros, registrando tiempos de atención.
+   Comando para ejecutar el programa: "g++ -o nombre_ejecutable Proyecto3.cpp -lpthread"
+
 */
 // LIBRERIAS
 #include <iostream>
@@ -183,8 +185,8 @@ int main() {
     cout << "||ESTADISTICAS||"<< endl;
     cout << "================"<< endl;
     // Mostrar resultados
-    cout << "Tiempo total de atencion para carros con pago Compass: " << tiempo_total_compass << " minutos. \tTiempo promedio de atencion por carro con pago Compass: "<< tiempo_promedio_compass << " minutos" << endl;
-    cout << "Tiempo total de atencion para carros con pago Efectivo: " << tiempo_total_efectivo << " minutos. \tTiempo promedio de atencion por carro con pago Efectivo: " << tiempo_promedio_efectivo << " minutos" << endl;
+    cout << "Tiempo total de atencion para carros con pago Compass: " << tiempo_total_compass << " minutos. \tTiempo promedio de atencion por carro con pago Compass: "<< tiempo_promedio_compass << " minutos." << endl;
+    cout << "Tiempo total de atencion para carros con pago Efectivo: " << tiempo_total_efectivo << " minutos. \tTiempo promedio de atencion por carro con pago Efectivo: " << tiempo_promedio_efectivo << " minutos." << endl;
 
     // Destruir mutexes
     pthread_mutex_destroy(&mutex_compass);
