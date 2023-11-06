@@ -72,7 +72,7 @@ void *atencion(void *args)
         #pragma omp parallel for
         for (int i = 0; i < parametros->cant_carros; i++)
         {
-            int kisko = i % 3;
+            int kisko = i % estaciones_compass;
             kisko += 1;
             #pragma omp critical
             {
@@ -87,7 +87,7 @@ void *atencion(void *args)
         #pragma omp parallel for
         for (int i = 0; i < parametros->cant_carros; i++)
         {
-            int kisko = i % 3;
+            int kisko = i % estaciones_efectivo;
             kisko += 1;
             #pragma omp critical
             {
