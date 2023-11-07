@@ -16,7 +16,7 @@
 *   Comando para ejecutar el programa: "g++ -o nombre_ejecutable Proyecto3.cpp -lpthread"
 * ---------------------------------------
 * Simulacion de estaciones LA VAS  Proyecto 3
-*----------------------------------------
+*----------------------------------------*/
 
 
 // LIBRERIAS
@@ -36,14 +36,6 @@ using namespace std;
 #define tiempo_efectivo 10              // Tiempo en atender carros con pago efectivo
 
 
-/**
- * Estructura Kiosco
- * Simula el kiosco/estacion para atender a los carros que pagan con efectivo o compass
- * 
- * @param id, identificador del kiosco
- * @param esCompass, true -> atiende carro compass | false -> atiende carro efectivo
- * @param carosAtendidos, carros que ha atendido del kiosco
-*/
 struct Kiosco {
     int id;
     bool esCompass;
