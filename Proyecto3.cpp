@@ -1,11 +1,24 @@
+
 /*
-   Simulación de atención a carros en kioscos COMPASS y EFECTIVO con el uso de mutex, variables condicionales y Pthreads
+*----------------------------------------
+* Proyecto3.cpp
+* ---------------------------------------
+* UNIVERSIDAD DEL VALLE DE GUATEMALA
+* CC3086 - Programacion de Microprocesadores
+* GRUPO 4
+* Compilacion : gcc -o "nombre" Proyecto3.cpp -pthread
+* ------
+* Descripcion: 
+*   Simulación de atención a carros en kioscos COMPASS y EFECTIVO con el uso de mutex, variables condicionales y Pthreads
+*
+*  Este programa simula la atención a carros que utilizan dos métodos de pago (COMPASS y EFECTIVO) en dos kioscos distintos.
+*   Utiliza hilos para gestionar la atención simultánea a múltiples carros, registrando tiempos de atención.
+*   Comando para ejecutar el programa: "g++ -o nombre_ejecutable Proyecto3.cpp -lpthread"
+* ---------------------------------------
+* Simulacion de estaciones LA VAS  Proyecto 3
+*----------------------------------------
 
-   Este programa simula la atención a carros que utilizan dos métodos de pago (COMPASS y EFECTIVO) en dos kioscos distintos.
-   Utiliza hilos para gestionar la atención simultánea a múltiples carros, registrando tiempos de atención.
-   Comando para ejecutar el programa: "g++ -o nombre_ejecutable Proyecto3.cpp -lpthread"
 
-*/
 // LIBRERIAS
 #include <iostream>
 #include <pthread.h>
